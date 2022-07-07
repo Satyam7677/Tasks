@@ -20,7 +20,7 @@ export default function TopTab1() {
         />
         <Tab.Screen
           name={screenNames.topTab1Screen2}
-          component={TopTab1MyKarma}
+          component={TopTab1LeaderBoard}
           options={{
             tabBarLabel: () => <Text>{screenNames.topTab1Screen2}</Text>,
           }}

@@ -16,7 +16,7 @@ export default function LeaderBoardTopTab2() {
 
       <TopTab.Screen
         name={screenNames.topTab2Screen2}
-        component={LeaderBoardAllTime}
+        component={LeaderBoardAugust}
       />
     </TopTab.Navigator>
   );

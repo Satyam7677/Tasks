@@ -5,4 +5,6 @@ export const colors = {
   yellow: '#ffc008',
   textGrey: '#A0A8B0',
   textBlack: '#333E49',
+  greyTheme: '#F5F7F9',
+  midBlackText: '#333E49',
 };
