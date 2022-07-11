@@ -1,16 +1,16 @@
 import {Animated, StyleSheet, View} from 'react-native';
-import React from 'react';
+import React, {createContext} from 'react';
 
 import LeaderBoardTopTab2 from '../../../routes/topTab/leaderBoardTopTab2';
 import {colors} from '../../../utils/constants/colors';
-import SliderComponentCard from '../../../components/sliderComponentCard';
+import SliderComponentCard from '../../../reusableComponents/sliderComponentCard';
 import {dummyData} from '../../../utils/constants/dummyData';
 
 import {vh, vw} from '../../../utils/constants/dimensions';
 
-export const MyContext = React.createContext();
+export const MyContext = createContext('');
 export default function TopTab1LeaderBoard() {
-  const post = new Animated.Value(1);
+  const post: any = new Animated.Value(1);
 
   return (
     <View style={styles.mainView}>

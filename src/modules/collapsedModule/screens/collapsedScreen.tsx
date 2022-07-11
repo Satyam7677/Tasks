@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, View, Animated, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 
 import TopTab1 from '../../../routes/topTab/topTab1';
 

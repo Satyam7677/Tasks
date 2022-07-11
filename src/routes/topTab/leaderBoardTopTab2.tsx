@@ -3,7 +3,6 @@ import React from 'react';
 
 import {screenNames} from '../../utils/constants/screenNames';
 import LeaderBoardAugust from '../../modules/collapsedModule/screens/leaderBoardAugust';
-import LeaderBoardAllTime from '../../modules/collapsedModule/screens/leaderBoardAllTime';
 
 const TopTab = createMaterialTopTabNavigator();
 export default function LeaderBoardTopTab2() {

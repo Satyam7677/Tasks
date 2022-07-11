@@ -4,6 +4,7 @@ import {colors} from '../utils/constants/colors';
 import {LocalImages} from '../utils/constants/localImages';
 import {vh, vw} from '../utils/constants/dimensions';
 import ProfileCircles from './profileCircles';
+import {Strings} from '../utils/constants/strings';
 
 export default function SliderComponentCard({data}: {data: any}) {
   return (
@@ -41,7 +42,7 @@ export default function SliderComponentCard({data}: {data: any}) {
       </View>
 
       <View style={styles.shareView}>
-        <Text style={styles.shareTextStyle}>{'Share'}</Text>
+        <Text style={styles.shareTextStyle}>{Strings.share}</Text>
         <Image source={LocalImages.whatsapp} style={styles.iconLogo} />
       </View>
     </View>

@@ -3,37 +3,22 @@ import React, {useContext} from 'react';
 import {MyContext} from './topTab1LeaderBoard';
 import {Strings} from '../../../utils/constants/strings';
 import {vh, vw} from '../../../utils/constants/dimensions';
-import CustomFlatList from '../../../components/customFlatList';
+import CustomFlatList from '../../../reusableComponents/customFlatList';
 import {colors} from '../../../utils/constants/colors';
+import {collapsedData} from '../../../utils/constants/collapsedModuleData';
 
 interface Props {
-  post: number;
+  item: {rank?: number; member: string; point?: number};
 }
 
-export default function LeaderBoardAugust(props: Props) {
-  const post = useContext(MyContext);
-  const data = [
-    {rank: 1, member: 'Kishore', point: 476},
-    {rank: 2, member: 'Krishna', point: 469},
-    {rank: 3, member: 'Mahatma', point: 479},
-    {rank: 1, member: 'Kishore', point: 476},
-    {rank: 2, member: 'Krishna', point: 469},
-    {rank: 1, member: 'Kishore', point: 476},
-    {rank: 3, member: 'Mahatma', point: 479},
-    {rank: 1, member: 'Kishore', point: 476},
-    {rank: 2, member: 'Krishna', point: 469},
-    {rank: 3, member: 'Mahatma', point: 479},
-    {rank: 1, member: 'Kishore', point: 476},
-    {rank: 2, member: 'Krishna', point: 469},
-    {rank: 1, member: 'Kishore', point: 476},
-    {rank: 3, member: 'Mahatma', point: 479},
-  ];
+export default function LeaderBoardAugust() {
+  const post: any = useContext(MyContext);
 
-  const renderItem = ({item}) => {
+  const renderItem = ({item}: Props) => {
     return (
       <View style={styles.listHeaderView}>
         <View style={styles.rankView}>
-          <Text style={styles.rankText}>{`#${item.rank}`}</Text>
+          <Text style={styles.rankText}>{`${Strings.hash}${item.rank}`}</Text>
         </View>
         <View style={styles.communityView}>
           <Text style={styles.memberText}>{item.member}</Text>
@@ -52,7 +37,7 @@ export default function LeaderBoardAugust(props: Props) {
       </View>
       <CustomFlatList
         style={styles.flatListStyle}
-        data={data}
+        data={collapsedData}
         listHeader={ListHeader}
         bounces={false}
         renderItem={renderItem}

@@ -3,7 +3,7 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 
 import {screenNames} from '../../utils/constants/screenNames';
 import TopTab1LeaderBoard from '../../modules/collapsedModule/screens/topTab1LeaderBoard';
-import TopTab1MyKarma from '../../modules/collapsedModule/screens/topTab1MyKarma';
+
 import {Animated, StyleSheet, Text} from 'react-native';
 
 const Tab = createMaterialTopTabNavigator();

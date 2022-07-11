@@ -3,6 +3,15 @@ import React from 'react';
 import {vw, vh} from '../utils/constants/dimensions';
 import {colors} from '../utils/constants/colors';
 
+interface props {
+  img?: any;
+  style?: object;
+  name?: string;
+  appericiation?: number;
+  txt?: number;
+  positionStyle?: object;
+}
+
 export default function ProfileCircles({
   img,
   style,
@@ -10,7 +19,7 @@ export default function ProfileCircles({
   appericiation,
   txt,
   positionStyle,
-}) {
+}: props) {
   return (
     <View style={[styles.mainView, style]}>
       <Image source={img} style={[style, styles.imageStyle]} />
@@ -41,7 +50,6 @@ const styles = StyleSheet.create({
     fontSize: vw(12),
   },
   appreciationTextStyle: {
-    // alignSelf: 'center',
     color: colors.white,
     fontSize: vw(11),
     flexWrap: 'wrap',

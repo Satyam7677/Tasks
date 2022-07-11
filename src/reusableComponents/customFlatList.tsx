@@ -1,5 +1,15 @@
-import {Animated, StyleSheet, View} from 'react-native';
+import {Animated, View} from 'react-native';
 import React from 'react';
+
+// interface props {
+//   data: any;
+//   renderItem: any;
+//   listHeader?: any;
+//   bounces?: Boolean;
+//   onScroll?: any;
+//   style?: any;
+//   throttle?: Number;
+// }
 
 export default function CustomFlatList({
   data,
@@ -8,9 +18,8 @@ export default function CustomFlatList({
   bounces,
   onScroll,
   style,
-
   throttle,
-}) {
+}: any) {
   return (
     <View>
       <Animated.FlatList

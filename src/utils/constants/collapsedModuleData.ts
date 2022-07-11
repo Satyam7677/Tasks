@@ -1,0 +1,16 @@
+export const collapsedData = [
+  {rank: 1, member: 'Kishore', point: 476},
+  {rank: 2, member: 'Krishna', point: 469},
+  {rank: 3, member: 'Mahatma', point: 479},
+  {rank: 1, member: 'Kishore', point: 476},
+  {rank: 2, member: 'Krishna', point: 469},
+  {rank: 1, member: 'Kishore', point: 476},
+  {rank: 3, member: 'Mahatma', point: 479},
+  {rank: 1, member: 'Kishore', point: 476},
+  {rank: 2, member: 'Krishna', point: 469},
+  {rank: 3, member: 'Mahatma', point: 479},
+  {rank: 1, member: 'Kishore', point: 476},
+  {rank: 2, member: 'Krishna', point: 469},
+  {rank: 1, member: 'Kishore', point: 476},
+  {rank: 3, member: 'Mahatma', point: 479},
+];
