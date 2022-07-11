@@ -19,4 +19,6 @@ export const colors = {
   brightRed: '#FD4E86',
   brightGreen: '#4CAF50',
   darkGrey: '#6A7076',
+  yellowOrche: '#9C903A',
+  cyan: '#00FFFF',
 };
